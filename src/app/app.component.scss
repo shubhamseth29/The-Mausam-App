@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "button";
+body{
+  height: 100%;
+  overflow: auto;
+  background-image: url("./Resources/cloud2.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+
+
+.header
+{
+ font-family: 'Press Start 2P', cursive;
+  display:flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 1000;
+  text-shadow: 2px 5px rgba(228, 185, 11, 0.6);
+}

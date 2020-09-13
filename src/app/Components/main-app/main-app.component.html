@@ -1,0 +1,25 @@
+<div class="app-wrap">
+    <main>
+      <section class="location">
+        <div class="city">{{WeatherData.name}}</div>
+        <div class="date">{{WeatherData.Date}}</div>
+      </section>
+      <div class="current">
+       <div *ngIf="WeatherData.isDay" class="iconAnimation">
+        <i class="fas fa-3x fa-sun sun"></i>  
+      </div>
+      <div *ngIf="!WeatherData.isDay" class="iconAnimation">
+          <i class="fas fa-3x fa-moon moon"></i>  
+      </div>   
+       <div class="iconAnimation cloudDiv">
+        <i class="fas fa-cloud fa-3x cloud"></i>
+      </div>
+        <div class="temp">{{WeatherData.temp_celcius}}<span> °C</span></div>
+        <div class="weather">Feels Like: {{WeatherData.temp_feels_like}} °C</div>
+        <div class="weather">Humidity: {{WeatherData.main.humidity}}%</div>
+        <div class="weather">Sunny</div>
+        <div class="weather">Wind Speed:{{WeatherData.windSpeed}} Km/h</div>
+        <div class="hi-low">{{WeatherData.temp_min}}° / {{WeatherData.temp_max}}°</div>
+      </div>
+    </main>
+  </div>
